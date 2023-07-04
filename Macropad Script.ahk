@@ -9,8 +9,8 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 ; return
 
 ;Ejecutar Task mangaer
-; {0-}:: 
-; Run, taskmgr.exe 
+; {0-}::
+; Run, taskmgr.exe
 ; return
 
 ; LWin & BackSpace::
@@ -84,7 +84,7 @@ return
 ; Run, chrome.exe "https://classroom.google.com/u/1/h" "https://docs.google.com/document/u/1/?tgif=c" "https://drive.google.com/drive/u/1/priority" " --new-window "
 ; return
 
-; ;Subir 1 u volumen 
+; ;Subir 1 u volumen
 ; Numpad2::
 ; send {Volume_Up 1 }
 ; return
@@ -123,27 +123,27 @@ return
     send <
 return
 
-;Intercambiar tecla PgUp por Home
-PgUp::
-    send {Home}
-return
+; ;Intercambiar tecla PgUp por Home
+; PgUp::
+;     send {Home}
+; return
 
-;Intercambiar tecla 'PgDn' por 'End'
-PgDn::
-    send {End}
-return
+; ;Intercambiar tecla 'PgDn' por 'End'
+; PgDn::
+;     send {End}
+; return
 
-;Intercambiar tecla 'Home' por 'PgUp'
-Home::
-    send {PgUp}
-return
+; ;Intercambiar tecla 'Home' por 'PgUp'
+; Home::
+;     send {PgUp}
+; return
 
-;Intercambiar tecla 'End' por 'PgDn'
-End::
-    send {PgDn}
-return
+; ;Intercambiar tecla 'End' por 'PgDn'
+; End::
+;     send {PgDn}
+; return
 
-; Indent -
+; ; Indent -
 
 LCtrl & `::
     send, ^[
@@ -161,3 +161,9 @@ F7::
 return
 F9::
     send, {Media_Next}
+return
+
+; send f8 with fn + f8
+LCtrl & Media_Play_Pause::
+    Send, {F8}
+return
